@@ -1,0 +1,88 @@
+/*allows me to cover the whole screen with the image*/
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+/*#intro {*/
+    /*background: url("Pictures/Safe to turn Off.jpg") no-repeat center center fixed;*/
+    /*!*covers all available space on the screen; based on the browser it switches due to -webkit, -moz, and -o*!*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+/*}*/
+
+#landerH2 {
+    font-weight: bold;
+    color: white;
+
+}
+
+#landerH4 {
+    color: white;
+}
+
+.top-nav-collapse {
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+header {
+    position: relative;
+    background-color: black;
+    /*height: 75vh;*/
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+        display: none;
+    }
+}
