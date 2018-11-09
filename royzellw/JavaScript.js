@@ -19,5 +19,3 @@ $("nav div ul li a").on('click', function(e) {
     });
 
 });
-
-// AOS.init();

@@ -6,14 +6,10 @@ header,
     height: 100%;
 }
 
-/*#intro {*/
-    /*background: url("Pictures/Safe to turn Off.jpg") no-repeat center center fixed;*/
-    /*!*covers all available space on the screen; based on the browser it switches due to -webkit, -moz, and -o*!*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
+* {
+    font-family: 'Crimson Text', serif;
+    font-size: medium;
+}
 
 #landerH2 {
     font-weight: bold;
@@ -26,7 +22,7 @@ header,
 }
 
 .top-nav-collapse {
-    background-color: black;
+    background-color: #37474F;
     color: white;
 }
 
@@ -35,7 +31,7 @@ nav a {
 }
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow:hover { transform: scale(1.1); box-shadow:0 10px 25px rgba(0,0,0,.1) }
 
 header {
     position: relative;
