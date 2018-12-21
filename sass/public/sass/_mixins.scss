@@ -1,0 +1,22 @@
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+
+@mixin transformer($num1) {
+  transform: scale($num1);
+}
+
+@mixin boxShadow($num1: 1, $num2: 2, $num3: 3, $num4: 4) {
+  box-shadow: $num1, $num2, $num3, $num4 rgba(0,0,0,.1);
+}
+
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}

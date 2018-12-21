@@ -1,0 +1,59 @@
+
+@import "colors";
+@import "variables";
+@import "mixins";
+
+/*allows me to cover the whole screen with the image*/
+html body header #intro {
+  height: $full;
+}
+
+* {
+  font-family: $ff;
+  font-size: $fs;
+}
+
+#landerH2 {
+  font-weight: $bo;
+  color: $white;
+
+}
+
+#landerH4 {
+  color: $white;
+}
+
+#btn {
+  background-color: $clear;
+}
+
+.top-nav-collapse {
+  background-color: $cosmo;
+  color: $white;
+}
+
+nav a {
+  color: $white;
+}
+
+.grow {
+  @include transition (all, 0.5s, ease-in-out);
+
+  &:hover {
+    @include transformer(1.1);
+    @include boxShadow(0 10px 25px);
+  }
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: $full;
+  min-height: $full;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  background-size: cover;
+  @include transform(translateX(-0%) translateY(-0%));
+}
