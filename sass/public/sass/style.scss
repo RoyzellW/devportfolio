@@ -57,3 +57,31 @@ header video {
   background-size: cover;
   @include transform(translateX(-0%) translateY(-0%));
 }
+
+.carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -40px;
+
+}
+
+/* The colour of the indicators */
+.carousel-indicators li {
+  background: #a3a3a3;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.carousel-indicators .active {
+  background: #707070;
+}
+
+.card {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.card-title {
+  text-align: center;
+}

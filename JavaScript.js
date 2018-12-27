@@ -19,3 +19,18 @@ $("nav div ul li a").on('click', function(e) {
     });
 
 });
+
+
+/* animate smooth scrolling sections */
+$("#btn1").on('click', function(e) {
+    e = document.getElementById("#btn1");
+    if (e.value === "View More") {
+        e.value = "View Less";
+        return e;
+    }
+    else {
+        e.value = "View More";
+        return e;
+    }
+});
+
