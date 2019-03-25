@@ -1,4 +1,3 @@
-
 @import "colors";
 @import "variables";
 @import "mixins";
@@ -36,14 +35,46 @@ nav a {
   color: $white;
 }
 
-.grow {
-  @include transition (all, 0.5s, ease-in-out);
+//.grow {
+//  @include transition (all, 0.5s, ease-in-out);
+//
+//  &:hover {
+//    @include transformer(1.1);
+//    @include boxShadow(0 10px 25px);
+//  }
+//}
 
-  &:hover {
-    @include transformer(1.1);
-    @include boxShadow(0 10px 25px);
-  }
-}
+/*Extra small devices (portrait phones, less than 576px)*/
+//@media (max-width: 575.98px) {
+//  .grow {
+//
+//    color: white;
+//
+//  }
+//
+//}
+//
+///*Small devices (landscape phones, 576px and up)*/
+//@media (min-width: 576px) and (max-width: 767.98px) {
+//
+//  .grow {
+//
+//    color: white;
+//
+//  }
+//
+//}
+//
+///*Medium devices (tablets, 768px and up)*/
+//@media (min-width: 768px) and (max-width: 991.98px) {
+//
+//  .grow {
+//
+//    color: white;
+//
+//  }
+//
+//}
 
 header video {
   position: absolute;
@@ -64,7 +95,13 @@ header video {
   bottom: -40px;
 
 }
+ .carousel-inner .carousel-item .row {
+   padding-bottom: 20px;
+ }
 
+//#carouselID {
+//  padding-bottom: 20px;
+//}
 /* The colour of the indicators */
 .carousel-indicators li {
   background: #a3a3a3;
@@ -73,6 +110,9 @@ header video {
   height: 8px;
 }
 
+.carousel .carousel-indicators li {
+  width: 2rem;
+}
 .carousel-indicators .active {
   background: #707070;
 }
@@ -84,4 +124,14 @@ header video {
 
 .card-title {
   text-align: center;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width 576px) {
+  //$("*").removeAttr("grow");
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  //...
 }

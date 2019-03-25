@@ -21,16 +21,17 @@ $("nav div ul li a").on('click', function(e) {
 });
 
 
-/* animate smooth scrolling sections */
-$("#btn1").on('click', function(e) {
-    e = document.getElementById("#btn1");
-    if (e.value === "View More") {
-        e.value = "View Less";
-        return e;
-    }
-    else {
-        e.value = "View More";
-        return e;
-    }
-});
+// /* change view button */
+// $("#btn1").click(function() {
+//
+//     if ($(this).text("View more")) {
+//
+//         $("#btn1").text('View Less')
+//
+//     } else {
+//
+//         $("#btn1").text('Not the same')
+//     }
+//
+// });
 
